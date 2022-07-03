@@ -1,0 +1,9 @@
+prefers-color-scheme
+====================
+Just like the web one!
+
+Build Requirements:
+- glib-dev
+- make
+- pkg-config
+- C compiler
