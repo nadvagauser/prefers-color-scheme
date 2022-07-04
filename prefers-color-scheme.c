@@ -60,17 +60,11 @@ int main () {
   g_variant_get (result, "(v)", &inner_result);
   g_variant_get (inner_result, "v", &raw_color_scheme);
   
-  switch (g_variant_get_uint32 (raw_color_scheme)) {
-    case 1:
-      g_print ("dark\n");
-      break;
-    // case 0:
-    //   g_print ("light\n");
-    //   break;
-    default:
-      g_print ("light\n");
-      // g_print ("default\n");
+  if (g_variant_get_uint32 (raw_color_scheme) == 1) {
+    g_print ("dark");
+  } else {
+    g_print ("light");
   }
-  
+
   return 0;
 }
