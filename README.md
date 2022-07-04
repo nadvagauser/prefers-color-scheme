@@ -5,7 +5,7 @@ Just like the web one! Only for GNOME[^tested]
 
 ## Usage examples
 ### Match theme in Vim
-```vimscript
+```vim
 if system('prefers-color-scheme') == 'dark'
 	colorscheme mountaineer-grey
 else
@@ -41,7 +41,7 @@ endif
 prefers-color-scheme: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib/ld-musl-x86_64.so.1, with debug_info, not stripped
 ```
 
-You can also install it with `make install`, uninstall with `make uninstall, and
+You can also install it with `make install`, uninstall with `make uninstall`, and
 build and run for easier development cycle (`make run`).
 
 `make install` installs a stripped executable.
