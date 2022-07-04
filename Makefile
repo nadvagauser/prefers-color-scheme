@@ -7,6 +7,7 @@ run:
 
 install:
 	make
+	strip ./prefers-color-scheme
 	install -s ./prefers-color-scheme /usr/bin/
 
 uninstall: /usr/bin/prefers-color-scheme
