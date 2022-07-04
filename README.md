@@ -1,7 +1,7 @@
 # prefers-color-scheme
 Just like the web one! Only for GNOME[^tested]
 
-^[tested]: Tested on GNOME 42.1
+[^tested]: Tested on GNOME 42.1
 
 # Developing
 ## Requirements:
