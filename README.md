@@ -3,14 +3,29 @@ Just like the web one! Only for GNOME[^tested]
 
 [^tested]: Tested on GNOME 42.1
 
-# Developing
-## Requirements:
+## Usage examples
+### Match theme in Vim
+```vimscript
+if system('prefers-color-scheme') == 'dark'
+	colorscheme mountaineer-grey
+else
+	colorscheme mountaineer-light
+endif
+```
+### Match theme in [Delta](https://github.com/dandavison/delta)
+```gitconfig
+[core]
+  pager = delta --line-numbers --$(prefers-color-scheme)
+```
+
+## Developing
+### Requirements:
 - glib-dev
 - make
 - pkg-config
 - C compiler
 
-## Building
+### Building
 1. Clone the repository and enter the diretory
 ```sh
 ~ $ git clone https://github.com/nadvagauser/prefers-color-scheme
